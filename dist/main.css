@@ -1,18 +1,80 @@
-/* Error: Undefined variable.
- *    ,
- * 30 |   color: abstracts.$brand-color;
- *    |          ^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   base/_base.scss 30:10  @use
- *   main.scss 7:1          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 30 \2502    color: abstracts.$brand-color;\a    \2502           ^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   base/_base.scss 30:10  @use\a   main.scss 7:1          root stylesheet";
+@font-face {
+  font-family: "Inria Serif";
+  src: url("../../fonts/Inria_Serif/InriaSerif-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
+@font-face {
+  font-family: "Inria Serif";
+  src: url("../../fonts/Inria_Serif/InriaSerif-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Inria Serif";
+  src: url("../../fonts/Inria_Serif/InriaSerif-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Inria Serif";
+  src: url("../../fonts/Inria_Serif/InriaSerif-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inria Serif";
+  src: url("../../fonts/Inria_Serif/InriaSerif-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inria Serif";
+  src: url("../../fonts/Inria_Serif/InriaSerif-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../../fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../../fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Winky";
+  src: url("../../fonts/Winky_Sans/WinkySans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Winky";
+  src: url("../../fonts/Winky_Sans/WinkySans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 700;
+  font-style: normal;
+}
+header {
+  background-color: #DF928F;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+}
+
+/*# sourceMappingURL=main.css.map */

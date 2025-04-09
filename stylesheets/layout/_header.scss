@@ -2,11 +2,12 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
-@use '../abstracts/variables'
+@use '../abstracts/variables';
+@use '../base/fonts';
 
 header {
-    background-color: $color-fond;
-    height: 100px;
+    background-color: variables.$color-fond;
+    height: 40px;
     width: 100%;
-    position: absolute
+    position: absolute;
 }

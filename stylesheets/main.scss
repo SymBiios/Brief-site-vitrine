@@ -11,7 +11,7 @@
 
 // 3. Layout-related sections
 @use 'layout/footer';
-@use 'layout/header';
+@use 'layout/_header';
 
 // 4. Components
 @use 'components/button';
@@ -23,4 +23,4 @@
 @use 'themes/default';
 
 // 7. Abstracts
-@use 'abstracts/variables'
+@use 'abstracts/variables';
