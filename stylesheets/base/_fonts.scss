@@ -1,3 +1,86 @@
 // -----------------------------------------------------------------------------
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
+@font-face {
+    font-family: 'Inria Serif';
+    src: url('../../fonts/Inria_Serif/InriaSerif-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Inria Serif';
+    src: url('../../fonts/Inria_Serif/InriaSerif-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+  }
+
+@font-face {
+    font-family: 'Inria Serif';
+    src: url('../../fonts/Inria_Serif/InriaSerif-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+
+@font-face {
+    font-family: 'Inria Serif';
+    src: url('../../fonts/Inria_Serif/InriaSerif-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Inria Serif';
+    src: url('../../fonts/Inria_Serif/InriaSerif-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Inria Serif';
+    src: url('../../fonts/Inria_Serif/InriaSerif-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Josefin Sans';
+    src: url('../../fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 700;
+    font-style: italic;
+  }
+  
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 700;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../../fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 700;
+    font-style: italic;
+  }
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 700;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Winky';
+    src: url('../../fonts/Winky_Sans/WinkySans-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 700;
+    font-style: italic;
+  }
+
+@font-face {
+    font-family: 'Winky';
+    src: url('../../fonts/Winky_Sans/WinkySans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 700;
+    font-style: normal;
+  }
