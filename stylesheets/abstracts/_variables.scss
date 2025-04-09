@@ -2,52 +2,32 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
+// Font families
+$font-inria: 'Inria Serif', serif;
+$font-josefin: 'Josefin Sans', sans-serif;
+$font-playfair: 'Playfair Display', serif;
+$font-winky: 'Winky Sans', sans-serif;
 
 
+// Font weights
+$weight-light: 300;
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-bold: 700;
 
 
-/// Regular font family
-/// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-
-/// Code (monospace) font family
-/// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
-
-
-
-
-
-/// Copy text color
-/// @type Color
-$text-color: rgb(34, 34, 34) !default;
-
-/// Main brand color
-/// @type Color
-$brand-color: rgb(229, 0, 80) !default;
-
-/// Light grey
-/// @type Color
-$light-grey: rgb(237, 237, 237) !default;
-
-/// Medium grey
-/// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
-
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
-
-
+// Colors
+$color-primary: #F1F7ED;
+$color-secondary: #39372F;
+$color-tertiary: #0D0630;
+$color-accent: #7F95D1;
+$color-fond: #DF928F;
 
 
 
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
-
-
-
 
 
 /// Breakpoints map
@@ -58,10 +38,6 @@ $breakpoints: (
   'medium': 768px,
   'large': 1024px,
 ) !default;
-
-
-
-
 
 
 /// Relative or absolute URL where all assets are served from
