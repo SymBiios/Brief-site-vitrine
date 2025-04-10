@@ -6,16 +6,14 @@
 @use '../base/fonts';
 
 header {
-    height: 30vh;
+    height: 40vh;
     width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr 5fr;
-    border: solid black;
+    display: flex;
+    flex-direction: column;
 }
 
 .phone-number {
-    font-family: variables.$font-playfair;
+    font-family: variables.$font-winky;
     font-size:1.8rem;
     color: variables.$color-primary;
     font-weight: 500;
@@ -25,11 +23,24 @@ header {
     background-color: variables.$color-fond;
     height: 5vh;
     width: 100vw;
-    grid-column: 1 / span 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
 }
 
 .logo-container {
+    height: 25vh;
+    width: 100vw;
     transform: scale(0.15);
-    grid-column: 3;
-    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.contact-button {
+    font-family: variables.$font-winky;
+    font-size: 1.8rem;
+    color: variables.$color-primary;
+    font-weight: 500;
+}
+
