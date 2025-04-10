@@ -92,7 +92,9 @@ header {
   font-family: "Winky Sans", sans-serif;
   font-size: 1.8rem;
   color: #F1F7ED;
-  font-weight: 500;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
 }
 
 .topbar {
@@ -117,7 +119,9 @@ header {
   font-family: "Winky Sans", sans-serif;
   font-size: 1.8rem;
   color: #F1F7ED;
-  font-weight: 500;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
 }
 
 .menu-bar {
@@ -126,6 +130,7 @@ header {
   background-color: #DF928F;
   display: flex;
   justify-content: center;
+  border-radius: 10px;
 }
 
 .menu-list {
@@ -135,6 +140,23 @@ header {
   list-style: none;
   justify-content: space-between;
   align-items: center;
+}
+
+.menu-it a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+  color: #F1F7ED;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  transition: transform 0.1s ease;
+  display: inline-block;
+}
+.menu-it a:hover {
+  transform: translateY(-2px);
+}
+.menu-it a:active {
+  transform: scale(0, 97);
 }
 
 /*# sourceMappingURL=main.css.map */

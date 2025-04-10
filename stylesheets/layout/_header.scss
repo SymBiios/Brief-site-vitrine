@@ -4,6 +4,7 @@
 
 @use '../abstracts/variables';
 @use '../base/fonts';
+@use '../abstracts/mixins';
 
 header {
     height: 35vh;
@@ -14,10 +15,8 @@ header {
 }
 
 .phone-number {
-    font-family: variables.$font-winky;
-    font-size:1.8rem;
-    color: variables.$color-primary;
-    font-weight: 500;
+    @include mixins.text-style(variables.$font-winky, 1.8rem, variables.$color-primary);
+    text-decoration: none;
 }
 
 .topbar {
@@ -39,10 +38,8 @@ header {
 }
 
 .contact-button {
-    font-family: variables.$font-winky;
-    font-size: 1.8rem;
-    color: variables.$color-primary;
-    font-weight: 500;
+    @include mixins.text-style(variables.$font-winky, 1.8rem, variables.$color-primary);
+    text-decoration: none;
 }
 
 .menu-bar {
@@ -51,6 +48,7 @@ header {
     background-color: variables.$color-fond;
     display: flex;
     justify-content: center;
+    border-radius: 10px;
 }
 
 .menu-list {
@@ -62,3 +60,17 @@ header {
     align-items: center;
 }
 
+.menu-it a{
+    @include mixins.text-style(variables.$font-josefin, 1.6rem, variables.$color-primary);
+    text-decoration: none;
+    transition: transform 0.1s ease;
+    display: inline-block;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        transform: scale(0,97);
+    }
+}
