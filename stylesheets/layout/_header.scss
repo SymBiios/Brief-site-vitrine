@@ -6,21 +6,30 @@
 @use '../base/fonts';
 
 header {
-    background-color: variables.$color-fond;
-    height: 50px;
-    width: 100%;
-    position: absolute;
-
-    display: flex;
-    align-items: center;
+    height: 30vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 5fr;
+    border: solid black;
 }
 
 .phone-number {
-    margin: 0;
-    padding: 1rem;
     font-family: variables.$font-playfair;
-    font-size: 2rem;
+    font-size:1.8rem;
     color: variables.$color-primary;
     font-weight: 500;
-    margin-left: 30%;
+}
+
+.topbar {
+    background-color: variables.$color-fond;
+    height: 5vh;
+    width: 100vw;
+    grid-column: 1 / span 5;
+}
+
+.logo-container {
+    transform: scale(0.15);
+    grid-column: 3;
+    grid-row: 2;
 }
