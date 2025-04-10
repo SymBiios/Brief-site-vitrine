@@ -1,3 +1,32 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.hero-section {
+    background-color: variables.$color-primary;
+    min-height: 65vh;
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    justify-items: center;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+}
