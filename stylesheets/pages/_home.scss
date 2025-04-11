@@ -8,25 +8,46 @@
     background-color: variables.$color-primary;
     min-height: 65vh;
     display:grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 2fr 2fr;
     align-items: center;
     justify-items: center;
-
-    @media (max-width: 768px) {
-        grid-template-columns: 1fr;
-    }
+    width: 100%;
 }
 
 .hero-image {
     max-width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .hero-image img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
+    width: 80%;
+    height: 80%;
     display: block;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.hero-text h1 {
+    @include mixins.text-style(variables.$font-playfair, 5rem, variables.$color-secondary);
+    margin-bottom: 3.5rem;
+}
+
+.hero-text h2 {
+    @include mixins.text-style(variables.$font-josefin, 3.5rem, variables.$color-secondary);
+    margin-bottom: 2.5rem;
+}
+
+.hero-text p {
+    @include mixins.text-style(variables.$font-inria, 2rem, variables.$color-secondary);
+    margin-bottom: 0,5rem;
 }
