@@ -19,6 +19,11 @@
 // 5. Pages
 @use 'pages/home';
 @use 'pages/gallery';
+@use 'pages/a-propos.scss';
+@use 'pages/blog.scss';
+@use 'pages/contact.scss';
+@use 'pages/studio.scss';
+@use 'pages/tarifs.scss';
 
 // 6. Themes
 @use 'themes/default';
