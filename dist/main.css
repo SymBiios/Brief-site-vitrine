@@ -261,4 +261,33 @@ header {
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
 }
 
+.main-tarifs {
+  width: 100%;
+  min-height: 65vh;
+  background-color: #F1F7ED;
+}
+
+.pricing-section {
+  width: 100%;
+  min-height: 100%;
+}
+
+.pricing-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.pricing-title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+  color: #39372F;
+  font-weight: normal;
+  font-style: normal;
+  padding: 2rem;
+  text-align: center;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,29 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+
+.main-tarifs {
+    width: 100%;
+    min-height: 65vh;
+    background-color: variables.$color-primary;
+}
+
+.pricing-section {
+    width: 100%;
+    min-height: 100%;
+    
+}
+
+.pricing-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.pricing-title {
+    @include mixins.text-style(variables.$font-josefin, 3rem, variables.$color-secondary);
+    padding: 2rem;
+    text-align: center;
+}
