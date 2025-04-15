@@ -15,11 +15,10 @@
 
 .pricing-grid {
     display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20vw;
+    grid-template-columns: 1fr 1fr;
     padding-bottom: 5vh;
     padding-top: 2vh;
-    justify-items: center;
     align-items: flex-start;
 }
 
@@ -34,16 +33,18 @@
     width: 45%;
     border: 0.3vh solid variables.$color-accent;
     border-radius: 16px;
+    justify-self: flex-start;
+    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.07);
 
     h3 {
-        @include mixins.text-style(variables.$font-josefin, 3rem, variables.$color-secondary);
+        @include mixins.text-style(variables.$font-josefin, 3rem, variables.$color-secondary, 400, italic);
         padding-left: 0.8vw;
     }
 
     li {
         @include mixins.text-style(variables.$font-inria, 2rem, variables.$color-secondary);
         padding-bottom: 1vw;
-        padding-left: 0.6vw;
+        padding-left: 1vw;
     }
 
     ul {
@@ -57,16 +58,18 @@
     width: 45%;
     border: 0.3vh solid variables.$color-fond;
     border-radius: 16px;
+    justify-self: flex-end;
+    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.07);
 
     h3 {
-        @include mixins.text-style(variables.$font-josefin, 3rem, variables.$color-secondary);
+        @include mixins.text-style(variables.$font-josefin, 3rem, variables.$color-secondary, 400, italic);
         padding-left: 0.8vw;
     }
 
     li {
         @include mixins.text-style(variables.$font-inria, 2rem, variables.$color-secondary);
         padding-bottom: 1vw;
-        padding-left: 0.6vw;
+        padding-left: 1vw;
     }
 
     ul {
@@ -102,6 +105,16 @@
 
 .price-line-studio {
     height: 0.3vh;
-    width: 60%;
+    width: 70%;
     background-color: variables.$color-fond;
+    border-radius: 2px;
+    margin: 0 auto 1vw auto;
+}
+
+.price-line-domicile {
+    height: 0.3vh;
+    width: 70%;
+    background-color: variables.$color-accent;
+    border-radius: 2px;
+    margin: 0 auto 1vw auto;
 }

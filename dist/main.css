@@ -274,11 +274,10 @@ header {
 
 .pricing-grid {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20vw;
+  grid-template-columns: 1fr 1fr;
   padding-bottom: 5vh;
   padding-top: 2vh;
-  justify-items: center;
   align-items: flex-start;
 }
 
@@ -297,13 +296,15 @@ header {
   width: 45%;
   border: 0.3vh solid #DDE3D1;
   border-radius: 16px;
+  justify-self: flex-start;
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.07);
 }
 .pricing-card-domicile h3 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 3rem;
   color: #39372F;
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 400;
+  font-style: italic;
   padding-left: 0.8vw;
 }
 .pricing-card-domicile li {
@@ -313,7 +314,7 @@ header {
   font-weight: normal;
   font-style: normal;
   padding-bottom: 1vw;
-  padding-left: 0.6vw;
+  padding-left: 1vw;
 }
 .pricing-card-domicile ul {
   list-style: none;
@@ -325,13 +326,15 @@ header {
   width: 45%;
   border: 0.3vh solid #F2D6C3;
   border-radius: 16px;
+  justify-self: flex-end;
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.07);
 }
 .pricing-card-studio h3 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 3rem;
   color: #39372F;
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 400;
+  font-style: italic;
   padding-left: 0.8vw;
 }
 .pricing-card-studio li {
@@ -341,7 +344,7 @@ header {
   font-weight: normal;
   font-style: normal;
   padding-bottom: 1vw;
-  padding-left: 0.6vw;
+  padding-left: 1vw;
 }
 .pricing-card-studio ul {
   list-style: none;
@@ -379,8 +382,18 @@ header {
 
 .price-line-studio {
   height: 0.3vh;
-  width: 60%;
+  width: 70%;
   background-color: #F2D6C3;
+  border-radius: 2px;
+  margin: 0 auto 1vw auto;
+}
+
+.price-line-domicile {
+  height: 0.3vh;
+  width: 70%;
+  background-color: #DDE3D1;
+  border-radius: 2px;
+  margin: 0 auto 1vw auto;
 }
 
 /*# sourceMappingURL=main.css.map */
