@@ -17,8 +17,10 @@
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 5vh;
+    padding-top: 2vh;
     justify-items: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .pricing-title {
@@ -27,28 +29,79 @@
     text-align: center;
 }
 
-.pricing-card {
-    background-color: variables.$color-accent;
-    padding: 1rem;
+.pricing-card-domicile {
+    background-color: variables.$color-tertiary;
+    width: 45%;
+    border: 0.3vh solid variables.$color-accent;
+    border-radius: 16px;
+
+    h3 {
+        @include mixins.text-style(variables.$font-josefin, 3rem, variables.$color-secondary);
+        padding-left: 0.8vw;
+    }
+
+    li {
+        @include mixins.text-style(variables.$font-inria, 2rem, variables.$color-secondary);
+        padding-bottom: 1vw;
+        padding-left: 0.6vw;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
 }
 
-.pricing-card h3 {
-    @include mixins.text-style(variables.$font-josefin, 3rem, variables.$color-secondary);
-}
+.pricing-card-studio {
+    background-color: variables.$color-tertiary;
+    width: 45%;
+    border: 0.3vh solid variables.$color-fond;
+    border-radius: 16px;
 
-.pricing-card li {
-    @include mixins.text-style(variables.$font-inria, 1.5rem, variables.$color-secondary);
+    h3 {
+        @include mixins.text-style(variables.$font-josefin, 3rem, variables.$color-secondary);
+        padding-left: 0.8vw;
+    }
+
+    li {
+        @include mixins.text-style(variables.$font-inria, 2rem, variables.$color-secondary);
+        padding-bottom: 1vw;
+        padding-left: 0.6vw;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
 }
 
 .price {
-    @include mixins.text-style(variables.$font-inria, 3rem, variables.$color-secondary);
+    @include mixins.text-style(variables.$font-inria, 3rem, variables.$color-secondary, 700);
+    padding: 1vw;
 }
 
-.pricing-card ul {
-    list-style: none;
-    padding: 0;
+.header-carte-studio {
+    background-color: variables.$color-fond;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
 }
 
-h3 {
+.header-carte-domicile {
+    background-color: variables.$color-accent;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.price-line-studio {
+    height: 0.3vh;
+    width: 60%;
     background-color: variables.$color-fond;
 }
