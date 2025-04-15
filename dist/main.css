@@ -281,13 +281,51 @@ header {
 }
 
 .pricing-title {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
   color: #39372F;
   font-weight: normal;
   font-style: normal;
   padding: 2rem;
   text-align: center;
+}
+
+.pricing-card {
+  background-color: #7F95D1;
+  padding: 1rem;
+}
+
+.pricing-card h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+  color: #39372F;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.pricing-card li {
+  font-family: "Inria Serif", serif;
+  font-size: 1.5rem;
+  color: #39372F;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.price {
+  font-family: "Inria Serif", serif;
+  font-size: 3rem;
+  color: #39372F;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+h3 {
+  background-color: #DF928F;
 }
 
 /*# sourceMappingURL=main.css.map */

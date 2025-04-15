@@ -11,7 +11,6 @@
 .pricing-section {
     width: 100%;
     min-height: 100%;
-    
 }
 
 .pricing-grid {
@@ -23,7 +22,33 @@
 }
 
 .pricing-title {
-    @include mixins.text-style(variables.$font-josefin, 3rem, variables.$color-secondary);
+    @include mixins.text-style(variables.$font-playfair, 4rem, variables.$color-secondary);
     padding: 2rem;
     text-align: center;
+}
+
+.pricing-card {
+    background-color: variables.$color-accent;
+    padding: 1rem;
+}
+
+.pricing-card h3 {
+    @include mixins.text-style(variables.$font-josefin, 3rem, variables.$color-secondary);
+}
+
+.pricing-card li {
+    @include mixins.text-style(variables.$font-inria, 1.5rem, variables.$color-secondary);
+}
+
+.price {
+    @include mixins.text-style(variables.$font-inria, 3rem, variables.$color-secondary);
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+h3 {
+    background-color: variables.$color-fond;
 }
