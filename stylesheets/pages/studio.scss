@@ -1,0 +1,27 @@
+.page-studio {
+  
+    .studio-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2vw;
+    }
+  
+    .studio-image {
+      grid-column: 1; // image à gauche
+    }
+  
+    .studio-description {
+      grid-column: 2; // texte à droite
+    }
+  
+    .map-container {
+      display: block; // une seule colonne pour la map
+    }
+  
+    .map-frame {
+      width: 100%;
+      height: 450px;
+      border: none;
+    }
+  }
+  
