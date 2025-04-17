@@ -10,9 +10,9 @@
     margin: 0 auto;
     padding: 4vh 2vw;
     background-color: variables.$color-primary;
-  }
-  
-  .evenement {
+}
+
+.evenement {
     grid-row: span 2;
     background-color: variables.$color-tertiary;
     border-radius: 1.6vh;
@@ -21,7 +21,7 @@
     flex-direction: column;
     gap: 2vh;
     min-height: 50vh;
-    padding: 2vh; 
+    padding: 2vh;
     width: 100%;
     border: 2px solid #E6DDD4;
 
@@ -30,29 +30,32 @@
     h1 {
         @include mixins.text-style(variables.$font-playfair, 3.2rem, variables.$color-secondary, variables.$weight-bold);
     }
-  
+
     img {
-      max-width: 52%;
-      height: auto;
-      border-radius: 1.2vh;
-      display: block;
+        max-width: 52%;
+        height: auto;
+        border-radius: 1.2vh;
+        display: block;
+        justify-self: center;
+        border: 2px solid #E6DDD4;
+        box-shadow: 0 0.8vh 2vh rgba(0, 0, 0, 0.15);
     }
-  
+
     .texte-evenement {
-      h2 {
-        @include mixins.text-style(variables.$font-playfair, 2.4rem, variables.$color-secondary, variables.$weight-bold);
-        margin-bottom: 1vh;
-      }
-  
-      p {
-        @include mixins.text-style(variables.$font-josefin, 1.6rem, variables.$color-secondary, variables.$weight-regular);
-      }
+        h2 {
+            @include mixins.text-style(variables.$font-playfair, 2.4rem, variables.$color-secondary, variables.$weight-bold);
+            margin-bottom: 1vh;
+        }
+
+        p {
+            @include mixins.text-style(variables.$font-josefin, 1.6rem, variables.$color-secondary, variables.$weight-regular);
+        }
 
 
     }
-  }
-  
-  .avis {
+}
+
+.avis {
     background-color: variables.$color-accent;
     border-radius: 1.2vh;
     text-align: center;
@@ -61,24 +64,38 @@
     align-items: center;
     box-shadow: 0 0.2vh 0.8vh rgba(0, 0, 0, 0.03);
     min-height: 22vh;
-    padding: 3vh; 
+    padding: 1.5vh;
     border: 2px solid #D0D7C7;
 
 
-  
+
     img {
-      width: 8vh;
-      height: 8vh;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 1.2vh;
-      border: 0.3vh solid variables.$color-fond;
+        width: 10vh;
+        height: 10vh;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 1.2vh;
+        border: 0.3vh solid #D0D7C7;
+        box-shadow: 0 0.8vh 2vh rgba(0, 0, 0, 0.15);
     }
-  
+
     p {
-      @include mixins.text-style(variables.$font-inria, 1.5rem, variables.$color-secondary, variables.$weight-light, italic);
-      margin: 0;
+        @include mixins.text-style(variables.$font-playfair, 1.5rem, variables.$color-secondary, variables.$weight-light, italic);
+        margin: 0;
     }
-  }
-  
-  
+
+    blockquote {
+        @include mixins.text-style(variables.$font-josefin, 2rem, variables.$color-secondary, variables.$weight-regular);
+    }
+
+    figcaption {
+        @include mixins.text-style(variables.$font-inria, 1.6rem, variables.$color-secondary, variables.$weight-bold,);
+        margin-bottom: 5vh;
+    }
+}
+
+
+.evenement header {
+    background-color: variables.$color-tertiary;
+}
+
