@@ -4,7 +4,7 @@
 .blog-grid {
     display: grid;
     grid-template-columns: 3fr 1.2fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 30vh 30vh;
     gap: 2vh;
     max-width: 90%;
     margin: 0 auto;
@@ -21,13 +21,21 @@
     flex-direction: column;
     gap: 2vh;
     min-height: 50vh;
-    padding: 4vh; 
-    justify-content: 
+    padding: 2vh; 
+    width: 100%;
+    border: 2px solid #E6DDD4;
+
+
+
+    h1 {
+        @include mixins.text-style(variables.$font-playfair, 3.2rem, variables.$color-secondary, variables.$weight-bold);
+    }
   
     img {
-      max-width: 100%;
+      max-width: 52%;
       height: auto;
       border-radius: 1.2vh;
+      display: block;
     }
   
     .texte-evenement {
@@ -39,6 +47,8 @@
       p {
         @include mixins.text-style(variables.$font-josefin, 1.6rem, variables.$color-secondary, variables.$weight-regular);
       }
+
+
     }
   }
   
@@ -52,7 +62,9 @@
     box-shadow: 0 0.2vh 0.8vh rgba(0, 0, 0, 0.03);
     min-height: 22vh;
     padding: 3vh; 
-    justify-content:
+    border: 2px solid #D0D7C7;
+
+
   
     img {
       width: 8vh;

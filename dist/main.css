@@ -388,7 +388,7 @@ body {
 .blog-grid {
   display: grid;
   grid-template-columns: 3fr 1.2fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: 30vh 30vh;
   gap: 2vh;
   max-width: 90%;
   margin: 0 auto;
@@ -405,11 +405,22 @@ body {
   flex-direction: column;
   gap: 2vh;
   min-height: 50vh;
-  padding: 4vh;
-  justify-content: img;
-  justify-content-max-width: 100%;
-  justify-content-height: auto;
-  justify-content-border-radius: 1.2vh;
+  padding: 2vh;
+  width: 100%;
+  border: 2px solid #E6DDD4;
+}
+.evenement h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.2rem;
+  color: #39372F;
+  font-weight: 700;
+  font-style: normal;
+}
+.evenement img {
+  max-width: 52%;
+  height: auto;
+  border-radius: 1.2vh;
+  display: block;
 }
 .evenement .texte-evenement h2 {
   font-family: "Playfair Display", serif;
@@ -437,13 +448,15 @@ body {
   box-shadow: 0 0.2vh 0.8vh rgba(0, 0, 0, 0.03);
   min-height: 22vh;
   padding: 3vh;
-  justify-content: img;
-  justify-content-width: 8vh;
-  justify-content-height: 8vh;
-  justify-content-object-fit: cover;
-  justify-content-border-radius: 50%;
-  justify-content-margin-bottom: 1.2vh;
-  justify-content-border: 0.3vh solid #F2D6C3;
+  border: 2px solid #D0D7C7;
+}
+.avis img {
+  width: 8vh;
+  height: 8vh;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1.2vh;
+  border: 0.3vh solid #F2D6C3;
 }
 .avis p {
   font-family: "Inria Serif", serif;
