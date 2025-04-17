@@ -32,10 +32,15 @@ header {
 .logo-container {
     height: 25vh;
     width: 100%;
-    transform: scale(0.13);
     display: flex;
     justify-content: center;
     align-items: center;
+
+    img {
+        max-width: 300px;
+        height: auto;
+        display: block;
+    }
 }
 
 .contact-button {

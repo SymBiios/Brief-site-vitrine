@@ -49,3 +49,7 @@
     @include mixins.text-style(variables.$font-inria, 2rem, variables.$color-secondary);
   }
 }
+
+.studio-map {
+  margin: 5vh auto;
+}

@@ -110,10 +110,14 @@ header {
 .logo-container {
   height: 25vh;
   width: 100%;
-  transform: scale(0.13);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.logo-container img {
+  max-width: 300px;
+  height: auto;
+  display: block;
 }
 
 .contact-button {
@@ -373,6 +377,83 @@ body {
   box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.2), 2px -2px 10px rgba(255, 255, 255, 0.5);
 }
 
+.studio-map h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4.5rem;
+  color: #39372F;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: 3fr 1.2fr;
+  grid-template-rows: auto auto;
+  gap: 2vh;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 4vh 2vw;
+  background-color: #F8FAF7;
+}
+
+.evenement {
+  grid-row: span 2;
+  background-color: #F5EFEA;
+  border-radius: 1.6vh;
+  box-shadow: 0 0.4vh 1vh rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  min-height: 50vh;
+  padding: 4vh;
+  justify-content: img;
+  justify-content-max-width: 100%;
+  justify-content-height: auto;
+  justify-content-border-radius: 1.2vh;
+}
+.evenement .texte-evenement h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  color: #39372F;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 1vh;
+}
+.evenement .texte-evenement p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+  color: #39372F;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.avis {
+  background-color: #DDE3D1;
+  border-radius: 1.2vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0.2vh 0.8vh rgba(0, 0, 0, 0.03);
+  min-height: 22vh;
+  padding: 3vh;
+  justify-content: img;
+  justify-content-width: 8vh;
+  justify-content-height: 8vh;
+  justify-content-object-fit: cover;
+  justify-content-border-radius: 50%;
+  justify-content-margin-bottom: 1.2vh;
+  justify-content-border: 0.3vh solid #F2D6C3;
+}
+.avis p {
+  font-family: "Inria Serif", serif;
+  font-size: 1.5rem;
+  color: #39372F;
+  font-weight: 300;
+  font-style: italic;
+  margin: 0;
+}
+
 .studio-wrapper {
   display: grid;
   grid-template-columns: 55% 43%;
@@ -423,6 +504,10 @@ body {
   color: #39372F;
   font-weight: normal;
   font-style: normal;
+}
+
+.studio-map {
+  margin: 5vh auto;
 }
 
 .main-tarifs {
