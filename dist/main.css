@@ -373,24 +373,56 @@ body {
   box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.2), 2px -2px 10px rgba(255, 255, 255, 0.5);
 }
 
-.page-studio .studio-wrapper {
+.studio-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 55% 43%;
   gap: 2vw;
+  margin: 5vh auto;
+  height: 55vh;
+  align-items: center;
 }
-.page-studio .studio-image {
+
+.studio-image {
   grid-column: 1;
+  text-align: end;
 }
-.page-studio .studio-description {
+.studio-image img {
+  width: 75%;
+  height: auto;
+}
+
+.studio-description {
   grid-column: 2;
 }
-.page-studio .map-container {
+
+.map-container {
   display: block;
 }
-.page-studio .map-frame {
+
+.map-frame {
   width: 100%;
   height: 450px;
   border: none;
+}
+
+.studio-description {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+.studio-description h2 {
+  font-family: "Inria Serif", serif;
+  font-size: 4.5rem;
+  color: #39372F;
+  font-weight: 700;
+  font-style: italic;
+}
+.studio-description p {
+  font-family: "Inria Serif", serif;
+  font-size: 2rem;
+  color: #39372F;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .main-tarifs {
