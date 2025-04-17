@@ -2,7 +2,7 @@
 
 Ce projet est une maquette de site pour un studio de photographie, développée dans le cadre d’un exercice HTML/CSS.
 
-## 🔍 Objectif
+## Objectif
 
 Créer un site complet, responsive, moderne et cohérent avec l’univers d’un studio photographique, en utilisant **exclusivement du HTML et du CSS** (pas de JavaScript).
 
@@ -20,7 +20,7 @@ Le projet contient **7 pages distinctes**, chacune représentant une section cl�
 
 ---
 
-## 🧰 Technologies utilisées
+## Technologies utilisées
 
 - HTML5
 - SCSS/CSS3
@@ -29,11 +29,11 @@ Aucun framework, ni JavaScript.
 
 ---
 
-## 🧱 Structure du projet
+## Structure du projet
 
 ---
 
-## 🎨 Particularités
+## Particularités
 
 - Design personnalisé : univers autour de la **photographie et de la barbe**
 - Utilisation de grilles CSS (`display: grid`) et de flexbox pour la mise en page
